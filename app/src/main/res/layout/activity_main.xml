@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header"
+        android:adjustViewBounds="true"
+        android:paddingBottom="20dp">
+    </ImageView>
+
+
+    <EditText
+        android:id="@+id/etAngka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Jumlah Pajak"
+        android:layout_below="@+id/iv_header"
+        android:paddingBottom="20dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_persen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Persen Pajak"
+        android:layout_below="@+id/etAngka"
+        android:paddingBottom="20dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_persen"
+        android:text="Hitung"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_hitung"
+        android:backgroundTint="#D10808"
+        android:text="Reset"
+        android:textStyle="bold"
+        android:textSize="18sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:text="Hasil"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_below="@id/btn_reset"
+        android:background="@color/teal_200"
+        >
+
+    </TextView>
+
+
+</RelativeLayout>
